@@ -6,9 +6,9 @@ Material Design inspired theme for Ghost blogging platform.
 ### Features
 
 * Zero-dependency on CSS frameworks or Javascript libraries
-* Mobile-first
-* CSS Flexbox for layout building
-* CSS animations (no jQuery or Javascript)
+* Mobile-first and adapted to all screens according to Material Design guidelines
+* CSS Flexbox for layout structure
+* CSS Animations (no jQuery or Javascript)
 
 
 ### Installation
@@ -32,7 +32,7 @@ For color palette customizing you only have to edit the `assets/css/theme.css` f
 
 #### Animations
 
-Animation timings, functions and definitions are customizable via `assets/css/animations.css`. Only navbar autohide and cards slide-on animations are triggered using Javascript, but animations and transitions are fully CSS based.
+Animation timings, functions and definitions are customizable via `assets/css/animations.css`. Navbar autohide and cards slide-on events are triggered using Javascript, but animations and transitions are fully CSS based.
 
 #### Components
 
@@ -74,4 +74,4 @@ Some widgets are customizable via CSS classes.
 
 ### Motivation
 
-Ghost Material is widely motivated by [Materialize]() and [Material Design Lite]() projects. I've tried to use both frameworks with Ghost but for some reason none of them convinced me, so I've tried to replicate what I like from them without heavy dependencies, just vanilla Javascript and CSS3.
+Ghost Material is widely motivated by [Materialize]() and [Material Design Lite]() projects. I've tried to use both frameworks with Ghost before but for some reason none of them convinced me, so I wanted to replicate what I like from them without using any heavy library or framework, just vanilla Javascript and CSS3.
