@@ -93,7 +93,7 @@ a, a:hover {
 
 /* --- Buttons -------------------------------------------------------------- */
 
-.button.shade, .button.shade:hover {
+.button.shaded, .button.shaded:hover {
   transition: box-shadow .3s ease;
 }
 .action-button > .actions > .button {
