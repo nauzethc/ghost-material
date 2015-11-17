@@ -1,0 +1,25 @@
+<nav class="pagination">
+
+  {{#if prev}}
+    <a class="fab ripple" href="{{page_url prev}}">
+      <i class="mdi mdi-arrow-left"></i>
+    </a>
+  {{else}}
+    <a class="fab disabled" href="#!">
+      <i class="mdi mdi-arrow-left"></i>
+    </a>
+  {{/if}}
+
+  <span class="current">Page {{page}} of {{pages}}</span>
+
+  {{#if next}}
+    <a class="fab ripple" href="{{page_url next}}">
+      <i class="mdi mdi-arrow-right"></i>
+    </a>
+  {{else}}
+    <a class="fab disabled" href="#!">
+      <i class="mdi mdi-arrow-right"></i>
+    </a>
+  {{/if}}
+
+</nav>

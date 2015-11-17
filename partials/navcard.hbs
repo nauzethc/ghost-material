@@ -1,0 +1,18 @@
+<div class="card image">
+  <header class="card--header bg-darken">
+    <!-- Title -->
+    <h5 class="card--title" itemprop="headline">{{title}}</h5>
+    <span class="card--subtitle">
+      <i class="fa fa-calendar-o"></i>
+      <time datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">
+        {{date format='DD MMM YYYY'}}
+      </time>
+    </span>
+    <!-- Image -->
+    {{#if image}}<img class="bg-image" src="{{image}}" />{{/if}}
+  </header>
+  <div class="card--back">
+    <p>{{excerpt words="40"}}&hellip;</p>
+    <a class="button solid shade ripple right" href="{{url}}">Go</a>
+  </div>
+</div>

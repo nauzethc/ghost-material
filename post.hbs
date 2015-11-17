@@ -1,0 +1,110 @@
+{{!< default }}
+{{#post}}
+
+
+{{! Post navbar }}
+<nav class="navbar shaded fixed autohide">
+  <div class="navbar--row container">
+    <!-- Icon -->
+    <div class="navbar--icon">
+      <a class="ripple" href="{{@blog.url}}">
+        <i class="mdi mdi-arrow-left"></i>
+      </a>
+    </div>
+    <!-- Title -->
+    <span class="navbar--title">{{title}}</span>
+  </div>
+</nav>
+
+
+{{! Post header }}
+<header class="header shaded bg-darken">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar--row container">
+      <div class="navbar--icon">
+        <a class="ripple" href="{{@blog.url}}">
+          <i class="mdi mdi-arrow-left"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- Content -->
+  <div class="header--content onBottom container">
+    <!-- Titles -->
+    <h1 class="header--title">{{title}}</h1>
+    <h5 class="header--subtitle">
+      <i class="mdi mdi-calendar"></i>
+      <time datetime="{{date format='YYYY-MM-DD'}}"
+        itemprop="datePublished">
+        {{date format='DD MMM YYYY'}}
+      </time>
+    </h5>
+  </div>
+  <!-- Background -->
+  {{#if image}}
+    <img class="bg-image" src="{{image}}" />
+  {{else}}{{#if @blog.cover}}
+    <img class="bg-image" src="{{@blog.cover}}" />
+  {{/if}}{{/if}}
+</header>
+
+
+<!-- Fabs -->
+<div class="fabbar large">
+  <div class="fabbar--content container">
+    {{> "sharefab"}}
+  </div>
+</div>
+
+
+{{! Post Main }}
+<main class="main" role="main">
+  <article class="main--content container" role="article">
+
+    {{! Content }}
+    <div class="post--content">{{content}}</div>
+    <div class="divider"></div>
+
+    {{! Tags }}
+    <div class="post--tags half">
+      {{#foreach tags}}
+        <a class="ripple" href="{{url}}" title="{{name}}">{{name}}</a>
+      {{/foreach}}
+    </div>
+
+    {{! Share }}
+    <div class="post--share half">
+      {{> "sharedrop"}}
+    </div>
+
+    {{! Author }}
+    <div class="post--author">
+      {{#author}}{{> "author"}}{{/author}}
+    </div>
+
+  </article>
+</main>
+
+
+{{! Comments }}
+<div>
+  <div id="disqus_thread" class="container"></div>
+</div>
+
+
+{{! Next and previous }}
+<aside class="side">
+  <div class="side--content container">
+    <div class="side--left">
+      {{#next_post}}{{> "navcard"}}{{/next_post}}
+      <span class="msg">No newer post</span>
+    </div>
+    <div class="side--right">
+      {{#prev_post}}{{> "navcard"}}{{/prev_post}}
+      <span class="msg">No older post</span>
+    </div>
+  </div>
+</aside>
+
+{{/post}}

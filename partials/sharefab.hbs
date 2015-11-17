@@ -1,0 +1,32 @@
+<div class="action-fab large">
+  <button class="fab large ripple">
+    <i class="mdi mdi-share-variant"></i>
+  </button>
+
+  {{! Add intents here. 'intent' class opens popup }}
+  {{! data params set popup width and height       }}
+
+  <div class="actions">
+    <!-- Twitter -->
+    <a class="fab ripple twitter intent"
+      data-width="550"
+      data-height="235"
+      href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}">
+      <i class="mdi mdi-twitter"></i>
+    </a>
+    <!-- Google+ -->
+    <a class="fab ripple google-plus intent"
+      data-width="590"
+      data-height="530"
+      href="https://plus.google.com/share?url={{url absolute="true"}}">
+      <i class="mdi mdi-google-plus"></i>
+    </a>
+    <!-- Facebook -->
+    <a class="fab ripple facebook intent"
+      data-width="580"
+      height="235"
+      href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}">
+      <i class="mdi mdi-facebook"></i>
+    </a>
+  </div>
+</div>

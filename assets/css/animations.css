@@ -1,0 +1,161 @@
+/* -------------------------------------------------------------------------- *
+ * Settings
+ * -------------------------------------------------------------------------- */
+
+/* --- General -------------------------------------------------------------- */
+
+a, a:hover {
+  transition: color .3s ease;
+}
+
+/* --- Navbar --------------------------------------------------------------- */
+
+.navbar--title,
+.navbar--icon,
+.navbar--icon a {
+  transition: all .3s ease;
+}
+.navbar.fixed.autohide {
+  transition: all .5s ease, height .3s ease;
+}
+.navbar--nav-link,
+.navbar--nav-link:hover {
+  transition: background-color .2s ease;
+}
+
+/* --- Header --------------------------------------------------------------- */
+
+.header {
+  transition: .3s ease;
+}
+.header--title,
+.header--subtitle {
+  animation-name: fadeInTop;
+  animation-duration: 1s;
+  transition: .3s ease;
+}
+
+/* --- Main ----------------------------------------------------------------- */
+
+.post-template .main--content {
+  animation-name: fadeInBottom;
+  animation-duration: 1s;
+  transition: .5s ease;
+}
+.post--tags a,
+.post--tags a:hover {
+  transition: .3s ease;
+}
+
+/* --- Cards ---------------------------------------------------------------- */
+
+.card {
+  transition: box-shadow .3s ease;
+}
+.card.image .card--header{
+  transition: .3s ease;
+}
+.card.slide:not(:first-child) {
+  margin-top: 30%;
+  transition: .5s ease;
+}
+.card.slide.show {
+  margin-top: 0;
+}
+
+/* --- Navigation cards ----------------------------------------------------- */
+
+.side--content {
+  transition: .3s ease;
+}
+.side--content .card .card--header {
+  transition: .3s ease-in;
+}
+
+/* --- Author --------------------------------------------------------------- */
+
+.author--media {
+  transition: .5s ease-in-out;
+}
+
+/* --- FABs ----------------------------------------------------------------- */
+
+.fab {
+  animation-name: zoomIn;
+  animation-duration: .5s;
+}
+.fab, .fab:hover {
+  transition: box-shadow .3s ease;
+}
+.action-fab > .actions .fab {
+  transition: .5s ease;
+}
+
+/* --- Buttons -------------------------------------------------------------- */
+
+.button.shade, .button.shade:hover {
+  transition: box-shadow .3s ease;
+}
+.action-button > .actions > .button {
+  transition: .5s ease;
+}
+
+/* --- Waves ---------------------------------------------------------------- */
+
+.wave {
+  opacity: 0;
+  animation: ripple .8s;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  background-color: rgba(255,255,255,.7);
+  border-radius: 100%;
+}
+
+/* -------------------------------------------------------------------------- *
+ * Animations
+ * -------------------------------------------------------------------------- */
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  } to {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}

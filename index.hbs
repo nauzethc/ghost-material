@@ -1,0 +1,89 @@
+{{!< default }}
+
+
+
+{{! Blog navbar }}
+<nav class="navbar fixed shaded">
+  <div class="navbar--row container">
+    <!-- Icon -->
+    <!-- <div class="navbar--icon"></div> -->
+    <!-- Title -->
+    <span class="navbar--title">{{@blog.title}}</span>
+    <!-- Spacer -->
+    <div class="navbar--spacer"></div>
+    <!-- Links -->
+    <nav class="navbar--nav">
+      <a class="navbar--nav-link ripple" href="#!">
+        <i class="mdi mdi-twitter"></i>
+        <span class="hide-on-medium">Twitter</span>
+      </a>
+      <a class="navbar--nav-link ripple" href="#!">
+        <i class="mdi mdi-github-circle"></i>
+        <span class="hide-on-medium">Github</span>
+      </a>
+      <a class="navbar--nav-link ripple" href="#!">
+        <i class="mdi mdi-google-plus"></i>
+        <span class="hide-on-medium">Google+</span>
+      </a>
+    </nav>
+  </div>
+</nav>
+
+
+{{! Blog header }}
+<header class="header shaded bg-darken">
+  <!-- Content -->
+  <div class="header--content onMiddle container">
+    <h1 class="header--title center">{{@blog.title}}</h1>
+    <h5 class="header--subtitle center">{{@blog.description}}</h5>
+  </div>
+  <!-- Background -->
+  {{#if @blog.cover}}
+    <img class="bg-image" src="{{@blog.cover}}" />
+  {{/if}}
+</header>
+
+
+{{! Blog content }}
+<main class="content" role="main">
+  <div class="main--content container">
+
+  {{#foreach posts}}
+    {{#if image}}
+      <article class="card slide image" role="article">
+      <!-- Header -->
+      <header class="card--header bg-darken">
+    {{else}}
+      <article class="card slide" role="article">
+      <!-- Header -->
+      <header class="card--header">
+    {{/if}}
+        <!-- Title -->
+        <h5 class="card--title" itemprop="headline">{{title}}</h5>
+        <span class="card--subtitle">
+          <i class="fa fa-calendar-o"></i>
+          <time datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">
+            {{date format='DD MMM YYYY'}}
+          </time>
+        </span>
+        <!-- Image -->
+        {{#if image}}<img class="bg-image" src="{{image}}" />{{/if}}
+      </header>
+      <!-- Content -->
+      <section class="card--main">
+        <summary class="card--content" itemprop="articleBody">
+          {{excerpt words="50"}}&hellip;
+        </summary>
+      </section>
+      <!-- Actions -->
+      <footer class="card--actions right">
+        <a class="button ripple" href="{{url}}">More</a>
+      </footer>
+    </article>
+  {{/foreach}}
+  </div>
+</main>
+
+
+{{! Blog pagination }}
+{{#if pagination}}{{pagination}}{{/if}}

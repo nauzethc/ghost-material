@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    {{! Document Settings }}
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+
+    {{! Responsive Meta Tags }}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="theme-color" content="#26a69a">
+
+    {{! CDN resources }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css" />
+
+    {{! Styles }}
+    <link rel="stylesheet" href="{{asset "assets/css/screen.css"}}" />
+    <link rel="stylesheet" href="{{asset "assets/css/animations.css"}}" />
+    <link rel="stylesheet" href="{{asset "assets/css/theme.css"}}" />
+
+    {{! Ghost header injection }}
+    {{ghost_head}}
+
+  </head>
+
+  <body class="{{body_class}}">
+
+    {{! Content }}
+    {{{ body }}}
+
+    {{! Footer }}
+    <footer class="footer">
+      {{! Top part }}
+      <div class="footer--top">
+      <div class="footer--content container">
+        <div class="half">
+          <p><a href="{{@blog.url}}">{{@blog.title}}</a><br />
+            {{@blog.description}}</p>
+        </div>
+        <div class="half">
+          <ul class="footer--suscriptions">
+            <li>
+              <a href="https://twitter.com">
+                <i class="mdi mdi-twitter-box"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://plus.google.com">
+                <i class="mdi mdi-google-plus-box"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com">
+                <i class="mdi mdi-github-box"></i>
+              </a>
+            </li>
+            <li>
+              <a href="{{@blog.url}}/rss/">
+                <i class="mdi mdi-rss-box"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      {{! Bottom part }}
+      <div class="footer--bottom">
+      <div class="footer--content container">
+        <div class="half">
+          <p><i class="mdi mdi-information-outline"></i>
+            <a href="http://creativecommons.org/licenses/by-sa/4.0/">
+              Creative Commons BY-SA 4.0
+            </a> - {{date format="YYYY"}}
+          </p>
+        </div>
+        <div class="half">
+          <p>
+            <i class="mdi mdi-code-tags"></i>
+            <a href="http://ghost.org">Ghost</a>
+            <a href="https://github.com/nauzethc/ghost-material">Material</a>
+            <i class="mdi mdi-xml"></i>
+          </p>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    {{! Scripts }}
+    <script src="{{asset "assets/js/main.js"}}"></script>
+
+    {{! Ghost body injection }}
+    {{ghost_foot}}
+
+  </body>
+</html>
