@@ -74,4 +74,4 @@ Some widgets are customizable via CSS classes.
 
 ### Motivation
 
-Ghost Material is widely motivated by [Materialize]() and [Material Design Lite]() projects. I've tried to use both frameworks with Ghost before but for some reason none of them convinced me, so I wanted to replicate what I like from them without using any heavy library or framework, just vanilla Javascript and CSS3.
+Ghost Material is widely motivated by [Materialize](http://materializecss.com/) and [Material Design Lite](http://www.getmdl.io/) projects. I've tried to use both frameworks with Ghost before but for some reason none of them convinced me, so I wanted to replicate what I like from them without using any heavy library or framework, just vanilla Javascript and CSS3.
