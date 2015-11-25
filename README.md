@@ -1,6 +1,6 @@
 # Ghost Material
 
-Material Design inspired theme for Ghost blogging platform.
+Material Design inspired theme for Ghost blogging platform. Visit my [blog](http://www.nauzethdez.com/) for a demo.
 
 
 ### Features
