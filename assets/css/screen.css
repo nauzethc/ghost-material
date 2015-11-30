@@ -602,6 +602,9 @@ strong, b {
 .post--content > blockquote > p {
   margin: 0;
 }
+.post--content > blockquote > p:not(:last-child) {
+  margin-bottom: 20px;
+}
 .post--content p > code {
   font-size: 1rem;
   padding: 0 5px;
