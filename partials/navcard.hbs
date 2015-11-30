@@ -9,7 +9,11 @@
       </time>
     </span>
     <!-- Image -->
-    {{#if image}}<img class="bg-image" src="{{image}}" />{{/if}}
+    {{#if image}}
+      <img class="bg-image" src="{{image}}" />
+    {{else}}
+      <div class="bg-image no-image"></div>
+    {{/if}}
   </header>
   <div class="card--back">
     <p>{{excerpt words="40"}}&hellip;</p>
