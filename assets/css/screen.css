@@ -38,6 +38,9 @@ strong, b {
   object-fit: cover;
   object-position: center;
 }
+.bg-image.no-image {
+  background-color: black;
+}
 .bg-darken::before {
   z-index: 1;
   content: '';
