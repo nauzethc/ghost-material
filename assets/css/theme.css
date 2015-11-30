@@ -13,6 +13,9 @@ a {
 a:hover {
   color: #00897b;
 }
+.bg-image.no-image {
+  background-color: #26a69a;
+}
 
 /* --- Navbar --------------------------------------------------------------- */
 
