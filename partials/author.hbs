@@ -11,7 +11,11 @@
         <i class="mdi mdi-google-plus"></i>
       </a>
     </nav>
-    <img class="image" src="{{image}}" />
+    {{#if image}}
+      <img class="image" src="{{image}}" />
+    {{else}}
+      <img class="image" src="{{@blog.url}}/shared/img/user-image.png" />
+    {{/if}}
   </div>
   <div class="author--info">
     <h5 class="name">{{name}}</h5>
