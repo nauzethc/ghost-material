@@ -612,7 +612,7 @@ strong, b {
 .post--content p > code {
   font-size: 1rem;
   padding: 0 5px;
-  rgba(127,127,127,.1);
+  background-color: rgba(127,127,127,.1);
 }
 .post--content > pre {
   padding: 20px;
