@@ -123,7 +123,6 @@
     // Share buttons popups
     var intents = document.querySelectorAll('.intent');
     if (intents.length) {
-      console.log('intents');
       intents = Array.prototype.slice.call(intents);
       intents.forEach(function(link) {
         var url    = link.href;
