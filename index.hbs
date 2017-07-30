@@ -39,7 +39,7 @@
   </div>
   <!-- Background -->
   {{#if @blog.cover}}
-    <img class="bg-image" src="{{@blog.cover}}" />
+    <img class="bg-image" src="{{@blog.cover_image}}" />
   {{/if}}
 </header>
 
@@ -49,7 +49,7 @@
   <div class="main--content container">
 
   {{#foreach posts}}
-    {{#if image}}
+    {{#if img_url feature_image}}
       <article class="card slide image" role="article">
       <!-- Header -->
       <header class="card--header bg-darken">
@@ -67,7 +67,7 @@
           </time>
         </span>
         <!-- Image -->
-        {{#if image}}<img class="bg-image" src="{{image}}" />{{/if}}
+        {{#if img_url feature_image}}<img class="bg-image" src="{{img_url feature_image}}" />{{/if}}
       </header>
       <!-- Content -->
       <section class="card--main">
