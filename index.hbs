@@ -49,7 +49,7 @@
   <div class="main--content container">
 
   {{#foreach posts}}
-    {{#if img_url feature_image}}
+    {{#if feature_image}}
       <article class="card slide image" role="article">
       <!-- Header -->
       <header class="card--header bg-darken">
@@ -67,7 +67,7 @@
           </time>
         </span>
         <!-- Image -->
-        {{#if img_url feature_image}}<img class="bg-image" src="{{img_url feature_image}}" />{{/if}}
+        {{#if feature_image}}<img class="bg-image" src="{{img_url feature_image}}" />{{/if}}
       </header>
       <!-- Content -->
       <section class="card--main">
