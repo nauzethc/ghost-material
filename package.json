@@ -3,7 +3,8 @@
 	"version": "2.0.0",
 	"author": {
 		"email": "nauzethc@gmail.com", 
-		"name": "Nauzet Hernandez"
+		"name": "Nauzet Hernandez",
+		"url": "http://www.nauzethdez.com/"
 	},
 	"engines": {
 		"ghost": ">=1.0.0"
@@ -11,5 +12,6 @@
 	"license": "MIT",
 	"config": {
 		"posts_per_page": 10
-	}
+	},
+	"demo": "http://www.nauzethdez.com/"
 }
