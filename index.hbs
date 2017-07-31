@@ -12,20 +12,7 @@
     <!-- Spacer -->
     <div class="navbar--spacer"></div>
     <!-- Links -->
-    <nav class="navbar--nav">
-      <a class="navbar--nav-link ripple" href="#!">
-        <i class="mdi mdi-twitter"></i>
-        <span class="hide-on-medium">Twitter</span>
-      </a>
-      <a class="navbar--nav-link ripple" href="#!">
-        <i class="mdi mdi-github-circle"></i>
-        <span class="hide-on-medium">Github</span>
-      </a>
-      <a class="navbar--nav-link ripple" href="#!">
-        <i class="mdi mdi-google-plus"></i>
-        <span class="hide-on-medium">Google+</span>
-      </a>
-    </nav>
+    {{navigation}}
   </div>
 </nav>
 
@@ -38,7 +25,7 @@
     <h5 class="header--subtitle center">{{@blog.description}}</h5>
   </div>
   <!-- Background -->
-  {{#if @blog.cover}}
+  {{#if @blog.cover_image}}
     <img class="bg-image" src="{{@blog.cover_image}}" />
   {{/if}}
 </header>
