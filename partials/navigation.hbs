@@ -1,0 +1,8 @@
+<nav class="navbar--nav">
+  {{#foreach navigation}}
+  <a class="navbar--nav-link ripple" href="{{url absolute="true"}}">
+    <i class="mdi mdi-link"></i>
+    <span class="hide-on-medium">{{label}}</span>
+  </a>
+  {{/foreach}}
+</nav>
