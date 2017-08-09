@@ -11,8 +11,8 @@
         <i class="mdi mdi-google-plus"></i>
       </a>
     </nav>
-    {{#if image}}
-      <img class="image" src="{{image}}" />
+    {{#if profile_image}}
+      <img class="image" src="{{image_url profile_image}}" />
     {{else}}
       <img class="image" src="{{@blog.url}}/shared/img/user-image.png" />
     {{/if}}
