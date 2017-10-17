@@ -44,11 +44,13 @@
         </div>
         <div class="half">
           <ul class="footer--suscriptions">
+            {{#if @blog.twitter}}
             <li>
-              <a href="#!">
+              <a href="{{twitter_url}}">
                 <i class="mdi mdi-twitter-box"></i>
               </a>
             </li>
+            {{/if}}
             <li>
               <a href="#!">
                 <i class="mdi mdi-google-plus-box"></i>
