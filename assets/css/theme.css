@@ -2,25 +2,25 @@
  * Theme
  * -------------------------------------------------------------------------- */
 
-/* --- General -------------------------------------------------------------- */
+ /* --- General -------------------------------------------------------------- */
 
-body {
+ body {
   background-color: #E4E7EA;
 }
 a {
-  color: #ffb300;
+  color: #ffb300; /*secondary color*/
 }
 a:hover {
-  color: #00897b;
+  color: #00897b; /*dark primary color*/
 }
 .bg-image.no-image {
-  background-color: #26a69a;
+  background-color: #26a69a; /*primary color*/
 }
 
 /* --- Navbar --------------------------------------------------------------- */
 
 .navbar {
-  background-color: #26a69a;
+  background-color: #26a69a; /*primary color*/
   color: white;
 }
 .navbar a {
@@ -38,7 +38,7 @@ a:hover {
   color: white;
 }
 .header .navbar.fixed.autohide.show {
-  background-color: #26a69a;
+  background-color: #26a69a; /*primary color*/
 }
 .header--subtitle {
   color: #ddd;
@@ -52,15 +52,15 @@ a:hover {
 .post--content > h4,
 .post--content > h5,
 .post--content > h6 {
-  border-color: teal;
+  border-color: teal; /*primary color*/
 }
 .post--content p > code {
   background-color: #e0f2f1;
-  color: teal;
+  color: teal; /*primary color*/
 }
 .post--content blockquote {
   background-color: #e0f2f1;
-  border-color: teal;
+  border-color: teal; /*primary color*/
 }
 .post--tags a {
   color: #888;
@@ -92,14 +92,14 @@ a:hover {
   background-color: rgba(0,0,0,.05);
 }
 .author--media {
-  background-color: #26a69a;
+  background-color: #26a69a; /*primary color*/
 }
 
 /* --- FABs ----------------------------------------------------------------- */
 
 .fab {
   color: white;
-  background-color: #ffb300;
+  background-color: #ffb300; /*secondary color*/
 }
 .fab:hover {
   color: white;
@@ -109,7 +109,7 @@ a:hover {
 
 .button.solid {
   color: white;
-  background-color: #ffb300;
+  background-color: #ffb300; /*secondary color*/
 }
 
 /* --- Waves ---------------------------------------------------------------- */
@@ -121,23 +121,23 @@ a:hover {
 /* --- Footer --------------------------------------------------------------- */
 
 .footer {
-  background-color: #00897b;
+  background-color: #00897b; /*dark primary color*/
 }
 .footer a {
-  color: #B2DFDB;
+  color: #B2DFDB; /*primary color*/
 }
 .footer a:hover {
   color: #FFFFFF;
 }
 .footer--top {
-  color: #80cbc4;
+  color: #80cbc4;  /*light primary color*/
 }
 .footer--bottom a {
-  color: #004d40;
+  color: #004d40; /*primary text*/
 }
 .footer--bottom a:hover {
-  color: #80cbc4;
+  color: #80cbc4; /*light primary color*/
 }
 .footer--bottom {
-  color: #004d40 ;
+  color: #004d40; /*primary text*/
 }
