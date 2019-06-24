@@ -8,7 +8,7 @@
     <!-- Icon -->
     <!-- <div class="navbar--icon"></div> -->
     <!-- Title -->
-    <a class="navbar--title" href="{{@blog.url}}">{{@blog.title}}</a>
+    <a class="navbar--title" href="{{@site.url}}">{{@site.title}}</a>
     <!-- Spacer -->
     <div class="navbar--spacer"></div>
     <!-- Links -->
@@ -21,12 +21,12 @@
 <header class="header shaded bg-darken">
   <!-- Content -->
   <div class="header--content onMiddle container">
-    <h1 class="header--title center">{{@blog.title}}</h1>
-    <h5 class="header--subtitle center">{{@blog.description}}</h5>
+    <h1 class="header--title center">{{@site.title}}</h1>
+    <h5 class="header--subtitle center">{{@site.description}}</h5>
   </div>
   <!-- Background -->
-  {{#if @blog.cover_image}}
-    <img class="bg-image" src="{{@blog.cover_image}}" />
+  {{#if @site.cover_image}}
+    <img class="bg-image" src="{{@site.cover_image}}" />
   {{/if}}
 </header>
 

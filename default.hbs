@@ -39,12 +39,12 @@
       <div class="footer--top">
       <div class="footer--content container">
         <div class="half">
-          <p><a href="{{@blog.url}}">{{@blog.title}}</a><br />
-            {{@blog.description}}</p>
+          <p><a href="{{@site.url}}">{{@site.title}}</a><br />
+            {{@site.description}}</p>
         </div>
         <div class="half">
           <ul class="footer--suscriptions">
-            {{#if @blog.twitter}}
+            {{#if @site.twitter}}
             <li>
               <a href="{{twitter_url}}">
                 <i class="mdi mdi-twitter-box"></i>
@@ -62,7 +62,7 @@
               </a>
             </li>
             <li>
-              <a href="{{@blog.url}}/rss/">
+              <a href="{{@site.url}}/rss/">
                 <i class="mdi mdi-rss-box"></i>
               </a>
             </li>

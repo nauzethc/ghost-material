@@ -7,7 +7,7 @@
   <div class="navbar--row container">
     <!-- Icon -->
     <div class="navbar--icon">
-      <a class="ripple" href="{{@blog.url}}">
+      <a class="ripple" href="{{@site.url}}">
         <i class="mdi mdi-arrow-left"></i>
       </a>
     </div>
@@ -23,7 +23,7 @@
   <nav class="navbar">
     <div class="navbar--row container">
       <div class="navbar--icon">
-        <a class="ripple" href="{{@blog.url}}">
+        <a class="ripple" href="{{@site.url}}">
           <i class="mdi mdi-arrow-left"></i>
         </a>
       </div>
@@ -44,8 +44,8 @@
   <!-- Background -->
   {{#if feature_image}}
     <img class="bg-image" src="{{img_url feature_image}}" />
-  {{else}}{{#if @blog.cover_image}}
-    <img class="bg-image" src="{{@blog.cover_image}}" />
+  {{else}}{{#if @site.cover_image}}
+    <img class="bg-image" src="{{@site.cover_image}}" />
   {{/if}}{{/if}}
 </header>
 
@@ -80,7 +80,7 @@
 
     {{! Author }}
     <div class="post--author">
-      {{#author}}{{> "author"}}{{/author}}
+      {{#primary_author}}{{> "primary_author"}}{{/primary_author}}
     </div>
 
   </article>
