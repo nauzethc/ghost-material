@@ -5,7 +5,7 @@
 /* --- General -------------------------------------------------------------- */
 
 body {
-  background-color: #E4E7EA;
+  background-color: #e4e7ea;
 }
 a {
   color: #ffb300;
@@ -27,7 +27,7 @@ a:hover {
   color: white;
 }
 .navbar--nav-link:hover {
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255, 255, 255, 0.5);
   border-bottom: 3px solid white;
 }
 
@@ -64,10 +64,49 @@ a:hover {
 }
 .post--tags a {
   color: #888;
-  background-color: rgba(127,127,127,0.15);
+  background-color: rgba(127, 127, 127, 0.15);
 }
 .post--tags a:hover {
-  background-color: rgba(127,127,127,0.3);
+  background-color: rgba(127, 127, 127, 0.3);
+}
+
+.kg-gallery-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.kg-gallery-row {
+  display: flex;
+  max-width: 100%;
+  padding: 4px 0;
+}
+
+.kg-gallery-image {
+  padding: 0 4px;
+}
+
+.kg-gallery-row img {
+  flex: 0.7925407925407926 1 0%;
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .kg-gallery-row {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .kg-gallery-row {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /* --- Cards ---------------------------------------------------------------- */
@@ -89,7 +128,7 @@ a:hover {
 /* --- Author --------------------------------------------------------------- */
 
 .author {
-  background-color: rgba(0,0,0,.05);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .author--media {
   background-color: #26a69a;
@@ -124,10 +163,10 @@ a:hover {
   background-color: #00897b;
 }
 .footer a {
-  color: #B2DFDB;
+  color: #b2dfdb;
 }
 .footer a:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer--top {
   color: #80cbc4;
@@ -139,5 +178,5 @@ a:hover {
   color: #80cbc4;
 }
 .footer--bottom {
-  color: #004d40 ;
+  color: #004d40;
 }
