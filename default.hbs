@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
 
-    {{! Document Settings }}
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta charset="utf-8" />
+<head>
 
-    {{! Responsive Meta Tags }}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{! Document Settings }}
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="utf-8" />
 
-    {{! Page Meta }}
-    <title>{{meta_title}}</title>
-    <meta name="theme-color" content="#26a69a">
+  {{! Responsive Meta Tags }}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{! CDN resources }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/1.3.41/css/materialdesignicons.min.css" />
+  {{! Page Meta }}
+  <title>{{meta_title}}</title>
+  <meta name="theme-color" content="#26a69a">
 
-    {{! Styles }}
-    <link rel="stylesheet" href="{{asset "assets/css/screen.css"}}" />
-    <link rel="stylesheet" href="{{asset "assets/css/animations.css"}}" />
-    <link rel="stylesheet" href="{{asset "assets/css/theme.css"}}" />
+  {{! CDN resources }}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/1.3.41/css/materialdesignicons.min.css" />
 
-    {{! Ghost header injection }}
-    {{ghost_head}}
+  {{! Styles }}
+  <link rel="stylesheet" href="{{asset "assets/css/screen.css"}}" />
+  <link rel="stylesheet" href="{{asset "assets/css/animations.css"}}" />
+  <link rel="stylesheet" href="{{asset "assets/css/theme.css"}}" />
 
-  </head>
+  {{! Ghost header injection }}
+  {{ghost_head}}
 
-  <body class="{{body_class}}">
+</head>
 
-    {{! Content }}
-    {{{ body }}}
+<body class="{{body_class}}">
 
-    {{! Footer }}
-    <footer class="footer">
-      {{! Top part }}
-      <div class="footer--top">
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal();">&times;</span>
+  </div>
+
+
+  {{! Content }}
+  {{{ body }}}
+
+  {{! Footer }}
+  <footer class="footer">
+    {{! Top part }}
+    <div class="footer--top">
       <div class="footer--content container">
         <div class="half">
           <p><a href="{{@blog.url}}">{{@blog.title}}</a><br />
@@ -69,10 +76,10 @@
           </ul>
         </div>
       </div>
-      </div>
+    </div>
 
-      {{! Bottom part }}
-      <div class="footer--bottom">
+    {{! Bottom part }}
+    <div class="footer--bottom">
       <div class="footer--content container">
         <div class="half">
           <p><i class="mdi mdi-information-outline"></i>
@@ -90,14 +97,16 @@
           </p>
         </div>
       </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-    {{! Scripts }}
-    <script src="{{asset "assets/js/main.js"}}"></script>
+  {{! Scripts }}
+  <script src="{{asset "assets/js/main.js"}}"></script>
 
-    {{! Ghost body injection }}
-    {{ghost_foot}}
+  {{! Ghost body injection }}
+  {{ghost_foot}}
 
-  </body>
+
+</body>
+
 </html>

@@ -35,17 +35,16 @@
     <h1 class="header--title">{{title}}</h1>
     <h5 class="header--subtitle">
       <i class="mdi mdi-calendar"></i>
-      <time datetime="{{date format='YYYY-MM-DD'}}"
-        itemprop="datePublished">
+      <time datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">
         {{date format='DD MMM YYYY'}}
       </time>
     </h5>
   </div>
   <!-- Background -->
   {{#if feature_image}}
-    <img class="bg-image" src="{{img_url feature_image}}" />
+  <img class="bg-image" src="{{img_url feature_image}}" />
   {{else}}{{#if @blog.cover_image}}
-    <img class="bg-image" src="{{@blog.cover_image}}" />
+  <img class="bg-image" src="{{@blog.cover_image}}" />
   {{/if}}{{/if}}
 </header>
 
@@ -69,7 +68,7 @@
     {{! Tags }}
     <div class="post--tags half">
       {{#foreach tags}}
-        <a class="ripple" href="{{url}}" title="{{name}}">{{name}}</a>
+      <a class="ripple" href="{{url}}" title="{{name}}">{{name}}</a>
       {{/foreach}}
     </div>
 
@@ -84,6 +83,7 @@
     </div>
 
   </article>
+
 </main>
 
 
@@ -106,5 +106,7 @@
     </div>
   </div>
 </aside>
+
+{{! Image Modal }}
 
 {{/post}}
