@@ -80,7 +80,7 @@ a:hover {
 .kg-gallery-row {
   display: flex;
   max-width: 100%;
-  padding: 1px 0;
+  padding: 4px 0;
 }
 
 .kg-gallery-image {
@@ -89,7 +89,6 @@ a:hover {
 
 .kg-gallery-row img {
   flex: 0.7925407925407926 1 0%;
-  margin-top: 8px;
   vertical-align: middle;
   max-width: 100%;
   height: auto;
